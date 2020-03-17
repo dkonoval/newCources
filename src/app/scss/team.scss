@@ -1,0 +1,49 @@
+.team {
+  
+    &__item {
+        margin: 25px 0;
+        @include box(100px, 150px);
+
+
+
+        &--descr {
+            margin-top: 25px;
+            p:first-child {
+                font: typo(20px, 24px, bold);
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+        }
+        &:hover {
+
+           .team__item--imgHover {
+            background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(113,119,9,1) 19%, rgba(9,9,121,1) 35%, rgba(137,8,76,1) 43%, rgba(92,164,6,1) 56%, rgba(27,189,4,1) 68%, rgba(0,212,255,1) 100%);           }
+        }
+
+        &--img {
+            position: relative;
+
+            .team__item--imgHover {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+            }
+        }
+    }
+
+    padding: 80px 0;
+
+    h2, p {
+        text-align: center;
+    }
+    &:hover {
+
+    }
+
+    &:focus {
+
+    }
+
+}
