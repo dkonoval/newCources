@@ -1,0 +1,5 @@
+@each $val in (left, center, right) {
+  .ta-#{$val} {
+    text-align: $val;
+  }
+}
