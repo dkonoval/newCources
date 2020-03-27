@@ -75,3 +75,18 @@ for(var j = 0; j < 5; j++) {
     console.log('Array item ' + testArray[j])
 
 }
+
+
+function showMessage() {
+    var testWindow = prompt('Enter');
+    if(testWindow > 100) {
+        alert('success');
+        return
+    } 
+    else {
+        showMessage()
+    }
+
+}
+showMessage();
+
