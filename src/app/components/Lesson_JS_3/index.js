@@ -85,8 +85,3 @@ if(findIndex > -1) {
 } else {
     console.log('No element in arr')
 }
-
-
-console.log(findIndex)
-debugger
-
