@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'montserrat';
     src: url('/fonts/montserrat-regular-webfont.woff2') format('woff2'),
-         url('/fonts/montserrat-regular-webfont.woff') format('woff');
+        url('/fonts/montserrat-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -11,7 +11,7 @@
 @font-face {
     font-family: 'montserrat';
     src: url('/fonts/montserrat-thin-webfont.woff2') format('woff2'),
-         url('/fonts/montserrat-thin-webfont.woff') format('woff');
+        url('/fonts/montserrat-thin-webfont.woff') format('woff');
     font-weight: 100;
     font-style: normal;
 
@@ -21,7 +21,7 @@
 @font-face {
     font-family: 'montserrat';
     src: url('/fonts/montserrat-bold-webfont.woff2') format('woff2'),
-         url('/fonts/montserrat-bold-webfont.woff') format('woff');
+        url('/fonts/montserrat-bold-webfont.woff') format('woff');
     font-weight: 700;
     font-style: normal;
 
@@ -30,7 +30,7 @@
 @font-face {
     font-family: 'Merriweather';
     src: url('/fonts/Merriweather-Regular.woff2') format('woff2'),
-         url('/fonts/Merriweather-Regular.woff') format('woff');
+        url('/fonts/Merriweather-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -40,7 +40,7 @@
 @font-face {
     font-family: 'Merriweather';
     src: url('/fonts/Merriweather-Bold.woff2') format('woff2'),
-         url('/fonts/Merriweather-Bold.woff') format('woff');
+        url('/fonts/Merriweather-Bold.woff') format('woff');
     font-weight: 700;
     font-style: normal;
 
@@ -50,7 +50,7 @@
 @font-face {
     font-family: 'Merriweather';
     src: url('/fonts/Merriweather-Light.woff2') format('woff2'),
-         url('/fonts/Merriweather-Light.woff') format('woff');
+        url('/fonts/Merriweather-Light.woff') format('woff');
     font-weight: 300;
     font-style: normal;
 
@@ -76,26 +76,26 @@
 
 @font-face {
     font-family: 'Raleway';
-    src: url('/fonts/Raleway-Regular.ttf') format('ttf');        
+    src: url('/fonts/Raleway-Regular.ttf') format('ttf');
     font-weight: normal;
     font-style: normal;
 
 }
 
 
-*{
+* {
     box-sizing: border-box;
 }
 
 body {
     font-family: "montserrat";
-    color:#646565!important;
+    color: #646565 !important;
     padding: 0;
     margin: 0;
 }
 
 img {
-     width: 100%;
+    width: 100%;
 }
 
 a:hover {
@@ -116,7 +116,8 @@ a:hover {
 }
 
 section.grey {
-    background-color: #f8fafa;;
+    background-color: #f8fafa;
+    ;
 }
 
 .section__content {
@@ -125,8 +126,8 @@ section.grey {
 
 
 .section__header {
-text-align: center;
-margin-bottom: 130px;
+    text-align: center;
+    margin-bottom: 130px;
 }
 
 .section__header--title {
@@ -163,7 +164,7 @@ section.banner {
 
 .burger__menu span,
 .burger__menu span:before,
-.burger__menu span:after   {
+.burger__menu span:after {
     position: absolute;
     display: block;
     width: 30px;
@@ -188,20 +189,20 @@ section.banner {
 .burger__menu--active span {
     background-color: transparent;
     z-index: 100;
-    right:2%;
+    right: 2%;
     position: fixed;
 }
 
 .burger__menu--active span:before {
-    top:0;
-   
+    top: 0;
+
     transform: rotate(45deg);
     background-color: #fff;
 }
 
 .burger__menu--active span:after {
-    top:0;
-    
+    top: 0;
+
     transform: rotate(-45deg);
     background-color: #fff;
 }
@@ -220,8 +221,8 @@ section.banner {
 }
 
 .burger__menu--active .navigation {
-    right:0;
-    top:0;
+    right: 0;
+    top: 0;
 }
 
 .nav__link {
@@ -250,14 +251,14 @@ section.banner {
 
 .burger__menu--active .burger__menu--overlay {
     display: block;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .banner__description--text {
     text-transform: uppercase;
     font-size: 45px;
     font-weight: bold;
-    color:#3e3f3f;
+    color: #3e3f3f;
     text-shadow: #dddddd 7px 7px 7px;
 }
 
@@ -292,7 +293,7 @@ section.banner {
 }
 
 .banner__description--btn {
-    margin-top:17%;
+    margin-top: 17%;
 }
 
 
@@ -301,20 +302,20 @@ section.banner {
 
 
 .product__description--subtitle {
-    font-family:  "Merriweather";
+    font-family: "Merriweather";
     font-weight: bold;
     font-size: 20px;
     text-transform: uppercase;
-    color:#3e3f3f;
+    color: #3e3f3f;
 }
 
 .product__description--text {
-    font-family:  "Raleway";
+    font-family: "Raleway";
     font-size: 20px;
     text-align: justify;
 }
 
-.works > .row {
+.works>.row {
     margin-bottom: 30px;
 }
 
@@ -340,36 +341,40 @@ section.banner {
 }
 
 .inner__service.first {
-    background: linear-gradient(rgba(0,0,0,0.8),
-    rgba(0,0,0,0.8)),
-     url('img/services2.png');
-    
+    background: linear-gradient(rgba(0, 0, 0, 0.8),
+            rgba(0, 0, 0, 0.8)),
+        url('img/services2.png');
+
 }
 
 .inner__service.second {
-    background: linear-gradient(rgba(0,0,0,0.8),
-    rgba(0,0,0,0.8)),
-     url('img/services1.png');
+    background: linear-gradient(rgba(0, 0, 0, 0.8),
+            rgba(0, 0, 0, 0.8)),
+        url('img/services1.png');
 }
+
 .inner__service.third {
-    background: linear-gradient(rgba(0,0,0,0.8),
-    rgba(0,0,0,0.8)),
-     url('img/services2.png');
+    background: linear-gradient(rgba(0, 0, 0, 0.8),
+            rgba(0, 0, 0, 0.8)),
+        url('img/services2.png');
 }
+
 .inner__service.forth {
-    background: linear-gradient(rgba(0,0,0,0.8),
-    rgba(0,0,0,0.8)),
-     url('img/services3.png');
+    background: linear-gradient(rgba(0, 0, 0, 0.8),
+            rgba(0, 0, 0, 0.8)),
+        url('img/services3.png');
 }
+
 .inner__service.fifth {
-    background: linear-gradient(rgba(0,0,0,0.8),
-    rgba(0,0,0,0.8)),
-     url('img/services4.png');
+    background: linear-gradient(rgba(0, 0, 0, 0.8),
+            rgba(0, 0, 0, 0.8)),
+        url('img/services4.png');
 }
+
 .inner__service.sixth {
-    background: linear-gradient(rgba(0,0,0,0.8),
-    rgba(0,0,0,0.8)),
-     url('img/services5.png');
+    background: linear-gradient(rgba(0, 0, 0, 0.8),
+            rgba(0, 0, 0, 0.8)),
+        url('img/services5.png');
 }
 
 .services.row:last-child {
@@ -433,7 +438,7 @@ section.banner {
     margin-bottom: 15px;
 }
 
-.member__description  {
+.member__description {
     margin-bottom: 15px;
 }
 
@@ -445,7 +450,7 @@ section.banner {
 
 .member__social {
     display: flex;
-    
+
 }
 
 .social__img--wrapper {
@@ -500,7 +505,7 @@ section.banner {
 
 .contact__form--wrapper,
 .contact__info--wrapper {
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 .contact__info--wrapper {
@@ -516,10 +521,11 @@ section.banner {
 .contact__input {
     color: #fff;
     background-color: transparent;
-    padding:10px 0;
-    margin: 15px 0;;
+    padding: 10px 0;
+    margin: 15px 0;
+    ;
     border: 0;
-    border-bottom: 1px solid rgba(255,255,255,0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .contact__btn {
@@ -539,7 +545,7 @@ section.banner {
     background-color: #56ccc3;
 }
 
-.map{
+.map {
     width: 100%;
 }
 
@@ -548,7 +554,7 @@ section.banner {
 }
 
 .contact__info--text {
-    
+
     color: #fff;
 }
 
@@ -564,10 +570,10 @@ footer {
 
 .footer__content {
     text-align: center;
-    color:#fff;
+    color: #fff;
 }
 
-.footer__social--wrapper{
+.footer__social--wrapper {
     width: 45px;
     height: 45px;
     background-color: #424648;
@@ -600,8 +606,8 @@ footer {
 }
 
 
-@media(max-width:1024px){
-    .banner__description--text{
+@media(max-width:1024px) {
+    .banner__description--text {
         font-size: 40px;
     }
 
@@ -612,6 +618,7 @@ footer {
     .inner__service {
         padding: 25px;
     }
+
     .description__content {
         padding: 10px;
     }
@@ -619,29 +626,33 @@ footer {
     .member__name {
         font-size: 15px;
     }
+
     .member__job {
         font-size: 10px;
     }
+
     .member__description {
         margin-bottom: 0px;
         font-size: 14px;
     }
+
     .contact__form {
         margin-bottom: 20px;
     }
 
     .product__description--subtitle,
     .product__description--text {
-        
+
         font-size: 17px;
     }
 }
 
-@media(max-width:768px){
+@media(max-width:768px) {
 
     .burgerBtn {
-        right:40px;
+        right: 40px;
     }
+
     .service__link {
         font-size: 15px;
     }
@@ -669,40 +680,46 @@ footer {
     .slider__wrapper {
         text-align: center;
     }
+
     .slider__wrapper img {
-        width:70%;
+        width: 70%;
     }
+
     .section__content {
         padding: 70px 0;
     }
+
     .section__header {
         margin-bottom: 60px;
     }
 
     .banner__description--content {
-        padding-top: 40%; 
+        padding-top: 40%;
     }
-    .product__description--subtitle{
+
+    .product__description--subtitle {
         text-align: center;
     }
-    .services > .row {
+
+    .services>.row {
         margin-bottom: 0;
     }
 
-    .inner__service{
+    .inner__service {
         margin-bottom: 20px;
     }
 }
 
-@media(max-width:576px){
+@media(max-width:576px) {
 
     .container {
         max-width: 100%;
     }
 
     .burgerBtn {
-        right:40px;
+        right: 40px;
     }
+
     .logo {
         margin-left: 15px;
     }
@@ -729,20 +746,20 @@ footer {
     }
 
     .team__member--description--wrapper {
-        left: 15%;   
+        left: 15%;
         width: 70%;
     }
 
     .contact__btn {
         width: 100%;
-        padding: 15px 40px;       
-        font-size: 15px;       
+        padding: 15px 40px;
+        font-size: 15px;
     }
 }
 
 @media(max-width:375px) {
     .burger__menu span {
-        right:40px;
+        right: 40px;
     }
 
     .nav__link {
@@ -760,5 +777,19 @@ footer {
 
     .partners__row {
         margin-bottom: 0;
+    }
+}
+
+
+
+
+
+.phonesList {
+    &__row {
+        display: flex;
+    }
+    &__item {
+        width: 33.3%;
+        padding: 15px;
     }
 }
