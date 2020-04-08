@@ -59,7 +59,7 @@ for(var a = 0; a < result.length; a++) {
         <p class="phonesList__item--descr">${iterator.description}.</p>
         <p class="phonesList__item--model">${iterator.model}</p>
         <div class="buttonRow">
-            <a href = "/">Go to details</a>
+            <span href = "/" data-id-clickitem = '${a}'>Show details</span>
             <a class="btn">Delete</a>
             <a class="addToCard">Add to card</a>
         </div>
@@ -158,3 +158,34 @@ document.getElementsByClassName('phonesList')[0].before(newDiv)
 
 //Добавить после выбранного элемента
 document.getElementsByClassName('phonesList')[0].after(newDiv)
+
+
+var modalWindow = document.getElementsByClassName('modalTest')[0];
+
+function showUserDetailsInformation(event) {
+
+  //event - описание произошедшего события
+  //элемент на котором произошло событие
+  var currentElentClick = event.target;
+
+
+  console.log(currentElentClick.dataset.idClickitem);
+
+  //currentElentClick.dataset.idClickitem - индекс элемента на котором произошел клик
+
+
+  console.log(result[currentElentClick.dataset.idClickitem])
+  modalWindow.classList.add('show');
+  modalWindow.getElementsByClassName('modalTest__text')[0].innerHTML = currentElentClick.dataset.idClickitem;
+}
+
+
+function addClickEvent() {
+    var elements = document.querySelectorAll('[data-id-clickitem]');
+  
+    for(var i = 0; i < elements.length; i++) {
+      elements[i].onclick = showUserDetailsInformation;
+    }
+}
+
+addClickEvent();
