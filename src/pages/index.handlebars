@@ -11,17 +11,39 @@
 </head>
 
 <body>    
-   <div class="myCarousel">
-        <div>
-            <img src = "./img/carousel1.jpeg">
+  
+    <section class = "persons">
+        <div class="persons__list">
+            <div class = "persons__list--item">
+                <img src = "">
+                <p>First name Last Name</p>
+                <a href = "mailto:">Email</a>
+            </div>
         </div>
-        <div>
-            <img src = "./img/carousel2.jpg">
+        <div class="persons__filters">
+            <div class="form">
+                <div class = "form__item">
+                    <label for = "nameSearch">Seach by name</label>
+                    <input type = "text" id = "nameSearch">
+                </div>
+                <div class = "form__item">
+                    <label for = "jobsList">Job</label>
+                    <select id = "jobsList"></select>
+                </div>
+                <div class = "form__item">
+                    <label>Age</label>
+                    <p class = "form__item--row">from <input type = "number"> to <input type = "number"></p>
+                </div>
+                 <div class = "form__item">
+                    <label for = "male">Male</label>
+                    <input type = "checkbox" id = "male">
+                </div>
+                <div class = "form__item">
+                    <button id = "submit">Submit</button>
+                </div>
+            </div>
         </div>
-        <div>
-            <img src = "./img/carousel2.jpg">
-        </div>
-    </div>
+    </section>
      
 </body>
 </html>
