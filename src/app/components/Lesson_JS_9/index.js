@@ -147,9 +147,25 @@ function ConstructorPerson(list, personsHolder, filtersHolder) {
     this.male = '';
 
     this.init = function() {
-        this.initPersonsList(this.list);
-        this.initPersonsFilers();
+        this.getUserList();
+        console.log('init');
+
+        debugger
         this.addEventsListeners();
+
+    }
+
+    this.getUserList = function() {
+        const _self = this;
+        fetch('https://jsonplaceholder.typicode.com/users')
+            .then(response => response.json())
+            .then(function(json) {
+                debugger
+                _self.list = json
+                this.initPersonsList(this.list);
+                this.initPersonsFilers();        
+            })
+
     }
     this.initPersonsList = function(list) {
         const self = this;
