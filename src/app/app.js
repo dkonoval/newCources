@@ -10,7 +10,7 @@ import './app.scss';
 
 //import './components/Lesson_JS_8'
 
-import './components/Lesson_JS_10'
+import './components/Lesson_JS_11'
 
 import $ from 'jquery'
 
