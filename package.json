@@ -39,7 +39,7 @@
     "jstransformer-markdown-it": "^2.0.0",
     "jstransformer-pug": "^0.3.0",
     "mkdirp": "^0.5.1",
-    "node-sass": "^4.6.0",
+    "node-sass": "^7.0.0",
     "normalize-css": "^2.3.1",
     "path": "^0.12.7",
     "postcss-assets-webpack-plugin": "^1.1.0",
